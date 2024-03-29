@@ -1,4 +1,4 @@
-# Proyek ReactJS XYZ
+# Project ReactJS Restaurant OpenAPI
 
 ## Versi ReactJS
 Versi ReactJS yang digunakan dalam proyek ini adalah 18.2.0.
