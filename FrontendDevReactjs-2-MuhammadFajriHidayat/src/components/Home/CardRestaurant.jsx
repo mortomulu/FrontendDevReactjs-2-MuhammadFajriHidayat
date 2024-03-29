@@ -15,7 +15,7 @@ export const CardRestaurant = (props) => {
   return (
     <div className="grid grid-cols-4 gap-6">
       {data.slice(0, loadedCards).map((restaurant, i) => (
-        <div className="card-wrapper h-96 mt-10" key={i}>
+        <div className="card-wrapper h-96" key={i}>
           <div className="h-52 overflow-hidden">
             <img
               className="w-full h-full object-cover"

@@ -1,20 +1,20 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
-import FilterNav from "../components/Home/FilterNav";
+import FilterNav from "../components/Home/FilterNav"; 
 import Sectionrestaurant from "../components/Home/SectionRestaurant";
 import { fetchData } from "../utils/api";
 
 export default function Home() {
   // state fetch data
-  const [restaurant, setRestaurant] = useState([]);
+  const [restaurant, setRestaurant] = useState([]) 
 
   // variabel filter category
   const listCategory = [
     ...new Set(restaurant.map((val) => val.cuisine[0].name)),
-  ];
+  ]
 
   // variabel filter price
-  const listPrice = [...new Set(restaurant.map((val) => val.price))];
+  const listPrice = [...new Set(restaurant.map((val) => val.price))]
 
   // fetch data api restaurant
   useEffect(() => {
@@ -29,23 +29,24 @@ export default function Home() {
           index !== 17 &&
           index !== 18 &&
           index !== 21
-      );
-      setRestaurant(filteredData);
-    });
-  }, []);
+      ) 
+      setRestaurant(filteredData) 
+    }) 
+  }, []) 
 
   // fungsi filter kategori
   const filterCategory = (cat) => {
     const newCategory = restaurant.filter(
       (prev) => prev.cuisine[0].name === cat
-    );
-    setRestaurant(newCategory);
-  };
+    ) 
+    setRestaurant(newCategory) 
+  } 
 
+  // fungsi filter price
   const filterPrice = (price) => {
-    const newPrice = restaurant.filter((prev) => prev.price === price);
-    setRestaurant(newPrice);
-  };
+    const newPrice = restaurant.filter((prev) => prev.price === price)
+    setRestaurant(newPrice)
+  }
 
   return (
     <>
@@ -59,5 +60,5 @@ export default function Home() {
       />
       <Sectionrestaurant restaurant={restaurant} />
     </>
-  );
+  ) 
 }
