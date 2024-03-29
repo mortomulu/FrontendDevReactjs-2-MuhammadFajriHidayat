@@ -32,3 +32,9 @@ Untuk memulai proyek, ikuti langkah-langkah berikut:
    ```
    
 6. Aplikasi akan terbuka di browser Anda dan siap digunakan.
+
+7. Link Vercel
+   
+   ```
+   https://meek-wisp-58b79f.netlify.app/
+   ```
