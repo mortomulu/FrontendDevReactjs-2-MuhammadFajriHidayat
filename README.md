@@ -35,7 +35,4 @@ Untuk memulai proyek, ikuti langkah-langkah berikut:
 
 7. Link Vercel
    
-   ```
-   https://meek-wisp-58b79f.netlify.app/
-   ```
    ## https://meek-wisp-58b79f.netlify.app/
