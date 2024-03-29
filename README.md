@@ -1,10 +1,10 @@
 # Proyek ReactJS XYZ
 
 ## Versi ReactJS
-Versi ReactJS yang digunakan dalam proyek ini adalah 17.0.2.
+Versi ReactJS yang digunakan dalam proyek ini adalah 18.2.0.
 
 ## Versi Node
-Versi Node.js yang digunakan dalam proyek ini adalah v14.17.0.
+Versi Node.js yang digunakan dalam proyek ini adalah v20.10.0.
 
 ## Jalankan Proyek Menggunakan npm
 Untuk memulai proyek, ikuti langkah-langkah berikut:
