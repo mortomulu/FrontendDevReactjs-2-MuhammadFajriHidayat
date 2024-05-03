@@ -66,7 +66,9 @@ export const CardRestaurant = (props) => {
               </div>
             </div>
           </div>
-          <Link to={`/detail/${restaurant.location_id}`} state={{ restaurant }}> {/* Pass restaurant object in state */}
+          <Link to={`/detail/${restaurant.location_id}`} state={{ restaurant }}>
+            {" "}
+            {/* Pass restaurant object in state */}
             <button className="flex-row-reverse w-full bg-indigo-950 text-white py-3">
               Learn More
             </button>

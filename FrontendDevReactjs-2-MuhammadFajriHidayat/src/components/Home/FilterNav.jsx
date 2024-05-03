@@ -8,10 +8,10 @@ export default function FilterNav({
   filterPrice,
   setRestaurant,
 }) {
-  const [data, setData] = useState([])
-  const [selectedCategory, setSelectedCategory] = useState("")
-  const [selectedPrice, setSelectedPrice] = useState("")
-  const [isOpenNow, setIsOpenNow] = useState(false)  
+  const [data, setData] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedPrice, setSelectedPrice] = useState("");
+  const [isOpenNow, setIsOpenNow] = useState(false);
 
   useEffect(() => {
     fetchData().then((result) => {
@@ -25,39 +25,39 @@ export default function FilterNav({
           index !== 18 &&
           index !== 21
       );
-      setData(filteredData)
+      setData(filteredData);
     });
   }, []);
 
   const handleCategoryChange = (event) => {
-    const category = event.target.value
-    setSelectedCategory(category)
-    filterCategory(category)
+    const category = event.target.value;
+    setSelectedCategory(category);
+    filterCategory(category);
   };
 
   const handlePriceChange = (event) => {
-    const price = event.target.value
-    setSelectedPrice(price)
-    filterPrice(price)
+    const price = event.target.value;
+    setSelectedPrice(price);
+    filterPrice(price);
   };
 
   const handleOpenNowChange = () => {
     setIsOpenNow(!isOpenNow);
     if (!isOpenNow) {
       const openRestaurants = data.filter((restaurant) => {
-        return restaurant.open_now_text === "Open Now"
+        return restaurant.open_now_text === "Open Now";
       });
-      setRestaurant(openRestaurants)
+      setRestaurant(openRestaurants);
     } else {
-      setRestaurant(data)
+      setRestaurant(data);
     }
   };
 
   const clearAllFilters = () => {
-    setSelectedCategory("")
-    setSelectedPrice("")
-    setIsOpenNow(false)
-    setRestaurant(data)
+    setSelectedCategory("");
+    setSelectedPrice("");
+    setIsOpenNow(false);
+    setRestaurant(data);
   };
   return (
     <div className="w-full border-b-2 border-gray-300 py-6 px-16 flex justify-between">
