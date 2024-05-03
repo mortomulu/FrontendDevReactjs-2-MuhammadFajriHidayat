@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Rating from "../../utils/rating";
+import Rating from "../../utils/Rating";
 
 export const CardRestaurant = (props) => {
   const data = props.restaurant;

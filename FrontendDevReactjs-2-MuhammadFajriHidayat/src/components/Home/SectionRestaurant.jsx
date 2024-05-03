@@ -4,7 +4,7 @@ import Placeholder from "./Placeholder";
 
 export default function Sectionrestaurant({ restaurant }) {
   const [isLoading, setIsLoading] = useState(true);
-  const skeletonNum = Array(8).fill(null);
+  const skeletonNum = Array(8).fill({ });
 
   useEffect(() => {
     const fetchData = async () => {

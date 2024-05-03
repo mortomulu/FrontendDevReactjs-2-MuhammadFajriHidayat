@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../components/Header";
-import Rating from "../utils/rating";
+import Rating from "../utils/Rating";
 import ReviewItem from "../components/DetailView/ReviewItem";
 
 const DetailView = () => {

@@ -4,7 +4,7 @@ export default function Placeholder({ skeletonNum }) {
   return (
     <>
       <div className="mt-10 grid grid-cols-4 gap-6">
-        {skeletonNum.map((i) => (
+        {skeletonNum.map((value, i) => (
           <Card key={i} className="  w-[250px] space-y-10 p-4">
             <Skeleton className="rounded-lg">
               <div className="h-24 rounded-lg bg-default-300"></div>
